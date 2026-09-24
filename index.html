@@ -16,6 +16,12 @@
 			</div>
 			<button class="button button-dark" id="spawnButton" type="button">Spawn buddy <span>↗</span></button>
 		</header>
+		<section class="buddy-library" aria-label="Buddy library">
+			<label class="field-label" for="buddySelect">Buddy</label>
+			<select id="buddySelect" class="select-control"><option value="preset">Sunny preset</option><option value="current">My buddy</option></select>
+			<input id="buddyNameInput" class="text-input" value="My buddy" type="text" aria-label="Saved buddy name">
+			<button class="button button-light" id="saveBuddyButton" type="button">Save buddy</button>
+		</section>
 
 		<section class="workspace" aria-label="Buddy editor">
 			<aside class="tool-panel">
@@ -46,7 +52,7 @@
 				</div>
 				<div class="canvas-actions">
 					<button class="text-button" id="clearButton" type="button">Clear canvas</button>
-					<button class="text-button" id="undoButton" type="button">Undo</button>
+					<button class="text-button" id="undoButton" type="button">Undo</button><button class="text-button" id="redoButton" type="button">Redo</button>
 				</div>
 			</aside>
 

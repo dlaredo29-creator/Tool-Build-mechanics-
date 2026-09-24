@@ -2,6 +2,18 @@
 
 ## 2026-09-23
 
+can you add the 100x100 break in the README
+
+## 2026-09-23
+
+can you fix the 100x100 because it still has rectangular pixels not square pixels. also you should be able to save your buddy (animations and messages) and be able to switch between buddies. maybe also include a preset buddy with animation (pop up, idle, exit) and its own messages.
+
+## 2026-09-23
+
+GREAT! THANK YOU! now can you fix the 100x100 so it shows faint grid lines like the others and also that all the pixels are squares (same side lenghts) not rectangles. also the undo should be control or command z and there should be an redo that's shift + control/command z
+
+## 2026-09-23
+
 The window should be the small horizontal shape it started as! the buddy should be on the side of the timer doing its animation and it should not be the main focus becuase the timer is. Also the duplicate drawing problem is still happening. Instead of showing the one singular drawing the user made it shows multiple of the same drawings/animations but smaller! it shouldn't do that! it should only show one!
 
 ## 2026-09-23

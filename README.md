@@ -25,3 +25,11 @@ There is no API.
 - The buddy display must never show copied or duplicated drawings; every animation frame replaces the same single display.
 
 The buddy should sit beside the timer as a small horizontal companion, not become the main focus of the page. Its reserved screen should contain exactly one rendered buddy image at a time.
+
+## Buddy library
+
+Buddy profiles can be saved in the browser with their drawings, animations, colors, FPS settings, and messages. Use the Buddy selector to switch profiles. The library includes a Sunny preset with pop-up, idle, and exit animations.
+
+## 100 × 100 canvas break
+
+The 100 × 100 canvas must show faint grid lines, and every pixel must remain a square with equal side lengths rather than becoming rectangular.
