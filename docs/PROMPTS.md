@@ -1,6 +1,10 @@
 # Prompt Log
 
-## 2026-09-22 (time not available)
+## 2026-09-23
+
+make the design less corporate and more friendly with softer and more fun but not crazy buttons and better UI. Also there should only be one buddy not multiple when you spawn it.(can you write this as a break in the README). Also the timer should start when you spawn the buddy.
+
+## 2026-09-22 12:00
 
 making a tool. It's a desktop pet called B.U.D.D.Y. (can be changed later). It reminds you of your work every 15 minutes (can add a custom message but comes with a preset reminder). The buddy is fully customizable, you can draw it on a pixel grid and give it a pop up animation, idle animation, and an exit animation. Can you write me a roadmap for this project and make sure to add all my past/present/future prompts into PROMPTS.MD?
 

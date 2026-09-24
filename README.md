@@ -12,3 +12,8 @@ How many API calls are realistically required?
 Zero API calls are required. The tool can run using local code, animations, messages, and a timer.
 What happens if the API fails?
 There is no API.
+
+## Current behavior break
+
+- Only one buddy can be spawned at a time. While the buddy window is open, the spawn control is disabled so repeated clicks do not create multiple buddies.
+- The 15-minute timer starts automatically when the buddy is spawned. It can still be paused, resumed, or reset from the timer controls.
