@@ -17,3 +17,11 @@ There is no API.
 
 - Only one buddy can be spawned at a time. While the buddy window is open, the spawn control is disabled so repeated clicks do not create multiple buddies.
 - The 15-minute timer starts automatically when the buddy is spawned. It can still be paused, resumed, or reset from the timer controls.
+
+## Open behavior breaks
+
+- The buddy window must stay the original small draggable size.
+- The animation should use one dedicated square display inside that small window and fit the entire 16 × 16 or 100 × 100 animation in it without changing the window size.
+- The buddy display must never show copied or duplicated drawings; every animation frame replaces the same single display.
+
+The buddy should sit beside the timer as a small horizontal companion, not become the main focus of the page. Its reserved screen should contain exactly one rendered buddy image at a time.
