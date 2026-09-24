@@ -1,5 +1,13 @@
 # Prompt Log
 
+## 2026-09-24
+
+The messages should be like the buddy save system.
+
+## 2026-09-24
+
+Can we do a more fun font(like "Daydream" by DoubleGum) and UI. and make it so you can add and remove buddies rather than it making one for you everytime you press the "save buddy" button
+
 ## 2026-09-23
 
 can you add the 100x100 break in the README

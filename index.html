@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>B.U.D.D.Y. Pixel Pet</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,9 +21,12 @@
 		</header>
 		<section class="buddy-library" aria-label="Buddy library">
 			<label class="field-label" for="buddySelect">Buddy</label>
-			<select id="buddySelect" class="select-control"><option value="preset">Sunny preset</option><option value="current">My buddy</option></select>
-			<input id="buddyNameInput" class="text-input" value="My buddy" type="text" aria-label="Saved buddy name">
-			<button class="button button-light" id="saveBuddyButton" type="button">Save buddy</button>
+			<select id="buddySelect" class="select-control"><option value="preset">Sunny preset</option></select>
+			<input id="buddyNameInput" class="text-input" value="Sunny preset" type="text" aria-label="Saved buddy name">
+			<div class="buddy-library-actions">
+				<button class="button button-light" id="saveBuddyButton" type="button">Save buddy</button>
+				<button class="button button-muted" id="removeBuddyButton" type="button">Remove buddy</button>
+			</div>
 		</section>
 
 		<section class="workspace" aria-label="Buddy editor">
@@ -76,17 +82,55 @@
 				<div id="frameStrip" class="frame-strip" aria-label="Animation frames"></div>
 				<div class="frame-actions">
 					<button class="button button-light" id="addFrameButton" type="button">+ Add frame</button>
-					<button class="icon-button" id="copyFrameButton" type="button" title="Copy current frame">▣</button>
+					<button class="icon-button" id="copyFrameButton" type="button" title="Copy current frame within this animation">▣</button>
+					<label class="copy-target" for="copyFrameTarget">
+						<span>Copy to</span>
+						<select id="copyFrameTarget" class="select-control mini-select">
+							<option value="popUp">Pop up</option>
+							<option value="idle">Idle</option>
+							<option value="exit">Exit</option>
+						</select>
+					</label>
+					<button class="button button-light" id="copyFrameToAnimationButton" type="button">Copy to selected</button>
 					<button class="icon-button" id="deleteFrameButton" type="button" title="Delete current frame">×</button>
 					<button class="icon-button play-button" id="playButton" type="button" title="Play animation">▶</button>
 				</div>
 				<div class="message-fields">
-					<label class="field-label" for="greetingInput">Greeting message</label>
-					<input id="greetingInput" class="text-input" value="Hey! Ready to make a little progress?" type="text">
-					<label class="field-label" for="idleInput">Occasional idle message</label>
-					<input id="idleInput" class="text-input" value="Still with you. Keep going." type="text">
-					<label class="field-label" for="exitInput">Exit message</label>
-					<input id="exitInput" class="text-input" value="Nice work. See you next time!" type="text">
+					<div class="message-editor" data-message-type="greeting">
+						<div class="message-editor-header">
+							<label class="field-label" for="greetingInput">Greeting messages</label>
+							<div class="message-editor-actions">
+								<button class="button button-light message-button" data-message-type="greeting" data-message-action="add" type="button">Add message</button>
+								<button class="button button-muted message-button" data-message-type="greeting" data-message-action="remove" type="button">Remove</button>
+							</div>
+						</div>
+						<div id="greetingMessageList" class="message-list" aria-live="polite"></div>
+						<input id="greetingInput" class="text-input" value="Hey! Ready to make a little progress?" type="text">
+					</div>
+
+					<div class="message-editor" data-message-type="idle">
+						<div class="message-editor-header">
+							<label class="field-label" for="idleInput">Idle messages</label>
+							<div class="message-editor-actions">
+								<button class="button button-light message-button" data-message-type="idle" data-message-action="add" type="button">Add message</button>
+								<button class="button button-muted message-button" data-message-type="idle" data-message-action="remove" type="button">Remove</button>
+							</div>
+						</div>
+						<div id="idleMessageList" class="message-list" aria-live="polite"></div>
+						<input id="idleInput" class="text-input" value="Still with you. Keep going." type="text">
+					</div>
+
+					<div class="message-editor" data-message-type="exit">
+						<div class="message-editor-header">
+							<label class="field-label" for="exitInput">Exit messages</label>
+							<div class="message-editor-actions">
+								<button class="button button-light message-button" data-message-type="exit" data-message-action="add" type="button">Add message</button>
+								<button class="button button-muted message-button" data-message-type="exit" data-message-action="remove" type="button">Remove</button>
+							</div>
+						</div>
+						<div id="exitMessageList" class="message-list" aria-live="polite"></div>
+						<input id="exitInput" class="text-input" value="Nice work. See you next time!" type="text">
+					</div>
 				</div>
 			</aside>
 		</section>
