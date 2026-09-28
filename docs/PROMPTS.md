@@ -1,5 +1,48 @@
 # Prompt Log
 
+## 2026-09-28
+
+1. Typography
+
+- What font tone matches your intent? Neutral? Soft? Direct?
+Daydream by DoubleGum matches my intent because it’s soft.
+
+- Is hierarchy clear?
+The hierarchy is clear.
+
+- Does text calm, confront, or guide?
+It is calming and friendly.
+2. Spatial Rhythm
+
+- Is the interface crowded or spacious?
+The interface is spacious and simple, with enough room for the pet and its messages without cluttering the screen.
+
+- Does white space create pause?
+Yes, the white space gives the user a moment to focus on the pet and its reminder without feeling overwhelmed.
+
+- Does layout reduce anxiety?
+Yes, the simple layout keeps the tool from feeling stressful or distracting and makes it feel more welcoming.
+3. Color Strategy
+
+- Minimal gray scale with accent?
+A warm companion palette fits my intent because I want the pet to feel friendly, calm, and supportive. Soft colors help make the tool feel welcoming without being too distracting.
+
+- Warm companion palette?
+Yes, warm and soft colors help give the pet a friendly personality and make its reminders feel more comforting.
+
+- High-contrast interruption?
+No, I want to avoid harsh, high-contrast colors because the tool is meant to gently remind users rather than alarm them.
+4. Motion + Timing
+
+- Does your signature interaction include delay?
+The pet uses a short animation to get the user's attention before displaying its reminder. The user can respond right away without being forced to wait.
+
+- Is motion slow enough to create awareness?
+Yes, the pet's animations should be smooth and gentle to draw attention without startling or distracting the user.
+
+- Are transitions intentional or default?
+The transitions are intentional. The pet has different animations for its normal state, reminding the user to save, and reacting to the user's choice. This helps make the interaction feel natural and supportive.
+
 ## 2026-09-24
 
 The messages should be like the buddy save system.
