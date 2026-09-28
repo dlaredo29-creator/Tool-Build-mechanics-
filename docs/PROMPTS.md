@@ -2,6 +2,14 @@
 
 ## 2026-09-28
 
+3. Message Timing
+
+- The greeting message should start as the pop up animation starts and the idle messages should start as the idle animation starts.
+
+4. Immediate Greeting
+
+- The greeting message should start as soon as the buddy starts.
+
 1. Typography
 
 - What font tone matches your intent? Neutral? Soft? Direct?
