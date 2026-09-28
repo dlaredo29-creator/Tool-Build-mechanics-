@@ -81,6 +81,13 @@
 					<button class="animation-tab" data-animation="idle" type="button">Idle</button>
 					<button class="animation-tab" data-animation="exit" type="button">Exit</button>
 				</div>
+				<div class="animation-variants">
+					<div id="animationVariantList" class="animation-variant-list" aria-label="Animation variations"></div>
+					<div class="animation-variant-actions">
+						<button class="button button-light" id="addAnimationVariantButton" type="button">+ Add variation</button>
+						<button class="icon-button" id="removeAnimationVariantButton" type="button" title="Remove selected variation" aria-label="Remove selected variation">×</button>
+					</div>
+				</div>
 				<div class="animation-meta"><span id="frameCount">1 frame</span><label>FPS <input id="fpsInput" type="number" min="1" max="30" value="8"></label></div>
 				<div id="frameStrip" class="frame-strip" aria-label="Animation frames"></div>
 				<div class="frame-actions">

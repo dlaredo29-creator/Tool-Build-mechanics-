@@ -2,6 +2,22 @@
 
 ## 2026-09-28
 
+9. Browser Only
+
+- Get rid of the parts that make it an app and keep it as a browser project for now.
+
+8. Animation Switching and Frame Reordering
+
+- Animations should randomly switch between their variations, and frames should be draggable to reorder them.
+
+7. Random Animation Variations
+
+- Make it possible to create multiple pop-up, idle, and exit animations like the messages, and have them play randomly.
+
+6. Desktop Pet App
+
+- Make it an app so the buddy can appear on the desktop, not only in a browser.
+
 5. Buddy Backups
 
 - Make it possible to download a specific buddy, including animations and messages, and upload it again as an emergency backup.

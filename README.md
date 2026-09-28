@@ -1,7 +1,7 @@
 What data does this tool need?
 The tool needs to know when the user starts working, how much time has passed, and when the 15-minute reminder should appear. It also needs the buddy's animation and message information so it knows what animation and message to show.
 Where is it stored?
-The timer state can be stored temporarily in the browser while the tool is running. The buddy's animations and messages can be stored in the project files. No personal user information needs to be stored.
+The timer runs in the current session. Buddy profiles are stored locally by the browser or desktop app; downloaded `.buddy.json` files can be kept separately as backups. No personal user information needs to be stored.
 Is it temporary or persistent?
 The timer is temporary and resets when the tool is restarted or the page is reloaded. The buddy's animations and messages are persistent because they are part of the project files.
 Does the system need memory between sessions?
@@ -28,7 +28,9 @@ The buddy should sit beside the timer as a small horizontal companion, not becom
 
 ## Buddy library
 
-Buddy profiles can be saved in the browser with their drawings, animations, colors, FPS settings, and messages. Use the Buddy selector to switch profiles. The library includes a Sunny preset with pop-up, idle, and exit animations.
+Buddy profiles can be saved locally with their drawings, animations, colors, FPS settings, and messages. Use the Buddy selector to switch profiles. The library includes a Sunny preset with pop-up, idle, and exit animations.
+
+Each animation type can have multiple variations. Add variations from the animation editor; B.U.D.D.Y. randomly picks a pop-up or exit variation when that phase plays, and switches to a different random idle variation after each completed idle loop. Drag frame thumbnails to reorder frames within the selected variation.
 
 Use **Download buddy** to save the current buddy as a `.buddy.json` backup file. **Upload buddy** restores a backup to the library without replacing an existing buddy; imported buddies are selected immediately.
 
