@@ -30,6 +30,8 @@ The buddy should sit beside the timer as a small horizontal companion, not becom
 
 Buddy profiles can be saved in the browser with their drawings, animations, colors, FPS settings, and messages. Use the Buddy selector to switch profiles. The library includes a Sunny preset with pop-up, idle, and exit animations.
 
+Use **Download buddy** to save the current buddy as a `.buddy.json` backup file. **Upload buddy** restores a backup to the library without replacing an existing buddy; imported buddies are selected immediately.
+
 ## 100 × 100 canvas break
 
 The 100 × 100 canvas must show faint grid lines, and every pixel must remain a square with equal side lengths rather than becoming rectangular.

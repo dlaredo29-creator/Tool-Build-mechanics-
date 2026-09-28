@@ -2,6 +2,10 @@
 
 ## 2026-09-28
 
+5. Buddy Backups
+
+- Make it possible to download a specific buddy, including animations and messages, and upload it again as an emergency backup.
+
 3. Message Timing
 
 - The greeting message should start as the pop up animation starts and the idle messages should start as the idle animation starts.
