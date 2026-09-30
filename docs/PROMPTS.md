@@ -1,6 +1,32 @@
 # Prompt Log
 
+## 2026-09-29
+
+5. Browser Support
+
+- Make the project work in a browser.
+
+4. Adjustable Timer
+
+- Make it possible to change the timer and set any duration.
+
+3. Choice Visibility and Reactions
+
+- Make the Save and Later options more visible and add reactions so the pet responds to the user's choice.
+
+2. Show Choices At Timeout
+
+- The Save and Later buttons should only appear after the timer is over.
+
+1. Save and Later Actions
+
+- Make Save and Later buttons appear after 15 minutes, give that one-time event its own single animation and message, and add a toggle to use idle animation and messages instead.
+
 ## 2026-09-28
+
+1. Clear Save Reminder
+
+- Make the reminder message clearer and make the reminder animation more noticeable so users recognize when it is time to save.
 
 9. Browser Only
 

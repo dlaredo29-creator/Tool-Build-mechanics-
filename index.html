@@ -80,12 +80,15 @@
 					<button class="animation-tab active" data-animation="popUp" type="button">Pop up</button>
 					<button class="animation-tab" data-animation="idle" type="button">Idle</button>
 					<button class="animation-tab" data-animation="exit" type="button">Exit</button>
+					<button class="animation-tab" data-animation="saveLater" type="button">Save / Later</button>
 				</div>
 				<div class="animation-variants">
-					<div id="animationVariantList" class="animation-variant-list" aria-label="Animation variations"></div>
-					<div class="animation-variant-actions">
-						<button class="button button-light" id="addAnimationVariantButton" type="button">+ Add variation</button>
-						<button class="icon-button" id="removeAnimationVariantButton" type="button" title="Remove selected variation" aria-label="Remove selected variation">×</button>
+					<div id="animationVariantControls" class="animation-variant-controls">
+						<div id="animationVariantList" class="animation-variant-list" aria-label="Animation variations"></div>
+						<div class="animation-variant-actions">
+							<button class="button button-light" id="addAnimationVariantButton" type="button">+ Add variation</button>
+							<button class="icon-button" id="removeAnimationVariantButton" type="button" title="Remove selected variation" aria-label="Remove selected variation">×</button>
+						</div>
 					</div>
 				</div>
 				<div class="animation-meta"><span id="frameCount">1 frame</span><label>FPS <input id="fpsInput" type="number" min="1" max="30" value="8"></label></div>
@@ -99,6 +102,7 @@
 							<option value="popUp">Pop up</option>
 							<option value="idle">Idle</option>
 							<option value="exit">Exit</option>
+							<option value="saveLater">Save / Later</option>
 						</select>
 					</label>
 					<button class="button button-light" id="copyFrameToAnimationButton" type="button">Copy to selected</button>
@@ -106,6 +110,14 @@
 					<button class="icon-button play-button" id="playButton" type="button" title="Play animation">▶</button>
 				</div>
 				<div class="message-fields">
+					<div class="message-editor save-later-message-editor">
+						<div class="message-editor-header">
+							<label class="field-label" for="saveLaterMessageInput">Save / Later message</label>
+						</div>
+						<input id="saveLaterMessageInput" class="text-input" value="Time to save your work. Save now, or choose Later to keep working." type="text">
+						<label class="reminder-toggle"><input id="useSaveLaterAnimationToggle" type="checkbox" checked><span>Use the dedicated Save / Later animation and message</span></label>
+					</div>
+
 					<div class="message-editor" data-message-type="greeting">
 						<div class="message-editor-header">
 							<label class="field-label" for="greetingInput">Greeting messages</label>
@@ -146,15 +158,16 @@
 		</section>
 
 		<section class="timer-bar" aria-label="Work timer">
-			<div><p class="eyebrow">03 / focus session</p><h2>Fifteen minutes, one small step.</h2></div>
+			<div><p class="eyebrow">03 / focus session</p><h2>Choose a time for your next step.</h2></div>
 			<div class="timer-readout"><span id="timerDisplay">15:00</span><span id="timerStatus">Ready when you are</span></div>
-			<div class="timer-actions"><button class="button button-coral" id="timerButton" type="button">Start timer</button><button class="text-button" id="resetTimerButton" type="button">Reset</button></div>
+			<div class="timer-actions"><label class="timer-duration" for="timerDurationInput"><span>Minutes</span><input id="timerDurationInput" type="number" min="1" max="1440" step="1" value="15" aria-label="Timer duration in minutes"></label><button class="button button-coral" id="timerButton" type="button">Start timer</button><button class="text-button" id="resetTimerButton" type="button">Reset</button></div>
 		</section>
 	</main>
 
 	<div id="buddyWindow" class="buddy-window" hidden>
-		<div class="buddy-window-bar" id="buddyWindowBar"><span><i></i> B.U.D.D.Y. is here</span><button id="closeBuddyButton" type="button" aria-label="Close buddy">×</button></div>
+		<div class="buddy-window-bar" id="buddyWindowBar"><span><i></i> B.U.D.D.Y. is here</span><span id="reminderBadge" class="reminder-badge" hidden>TIME TO SAVE</span><button id="closeBuddyButton" type="button" aria-label="Close buddy">×</button></div>
 		<div class="buddy-window-content"><div id="buddyDisplay" class="buddy-display"><img id="buddyImage" class="buddy-image" alt="Your animated buddy"></div><div><p class="buddy-message" id="buddyMessage"></p><p class="buddy-time" id="buddyTime">15:00 remaining</p></div></div>
+		<div id="saveLaterActions" class="save-later-actions" hidden><button id="saveReminderButton" class="button button-coral" type="button">Save</button><button id="laterReminderButton" class="button button-light" type="button">Later</button></div>
 	</div>
 
 	<script src="main.js"></script>

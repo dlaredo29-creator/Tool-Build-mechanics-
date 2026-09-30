@@ -13,10 +13,16 @@ Zero API calls are required. The tool can run using local code, animations, mess
 What happens if the API fails?
 There is no API.
 
+## Run in a browser
+
+Open `index.html` in a modern browser. The app uses browser local storage for buddy profiles and timer preferences; no desktop runtime or build step is required.
+
 ## Current behavior break
 
 - Only one buddy can be spawned at a time. While the buddy window is open, the spawn control is disabled so repeated clicks do not create multiple buddies.
-- The 15-minute timer starts automatically when the buddy is spawned. It can still be paused, resumed, or reset from the timer controls.
+- The timer starts automatically when the buddy is spawned. Set its duration from 1 to 1,440 minutes; the choice is remembered in the browser. It can still be paused, resumed, or reset from the timer controls.
+- **Save** and **Later** actions stay hidden during a manual spawn and appear only after the 15-minute timer expires. They use large, high-contrast buttons. Save shows a saved confirmation and reaction before the buddy exits; Later shows a brief acknowledgement and reaction before idle resumes.
+- The Save / Later event has one dedicated animation sequence and one editable message. The editor toggle can disable those and use the idle animation and messages instead.
 
 ## Open behavior breaks
 
